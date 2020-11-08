@@ -6,5 +6,30 @@
 <h4>{{obj.age}}</h4>
 <h4>{{arr.length}}</h4> 
 <h4>{{siteurl}}</h4>
+<br> <br>
 <h4>{{10-10}}</h4>
+<app-users></app-users>
 <app-userlist></app-userlist>
+<app-signup></app-signup>
+<app-login></app-login>
+<button (click)="GetName()">Get my name </button>
+<br> <br>
+<button (click)="FathersName(myname)">Get my father name</button>
+<br> <br>
+<button (click)="myEvent('this is click event')" >Click me</button>
+<br> <br>
+<input type ="text" #box (keyup.enter)="myEvent(box.value)" />
+ <br> <br>
+ <input type ="text" #box (blur)="myEvent('blur event !')"  />
+ <h1 
+ (mouseover)="myEvent('mouseover event')"style = " background-color: skyblue; ">
+     mouse event 
+ </h1>
+
+ <h1
+  (mouseleave)="myEvent('mouseleave event')"
+    style = " background-color: red; ">
+     mouse event 
+ </h1>
+ 
+

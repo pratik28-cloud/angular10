@@ -9,6 +9,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   appname = 'blog app';
   name ="bruce" 
+  myname = "anjan"
   getname()
   {
     return this.name   
@@ -17,7 +18,28 @@ export class AppComponent {
     name:'kelly',
     age:20
   }
+  GetName()
+  {
+    alert("Pratik Dey")
+  }
+
+  FathersName(name1)
+  {
+    alert(name1)
+  }
+
+  myEvent(evt)
+  {
+     alert(evt)
+  }
   arr=['bruce', 'tony', 'peter'];
   siteurl= window.location.href
   
 }
+
+
+
+
+
+
+ 
